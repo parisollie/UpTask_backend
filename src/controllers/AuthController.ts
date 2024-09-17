@@ -106,8 +106,8 @@ export class AuthController {
                 return res.status(401).json({ error: error.message })
             }
 
-            //Vid 562,ERRROR 
-            const token = generateJWT({id: user._id})
+            //Vid 563,ERRROR 
+            const token = generateJWT({id: user._id.toString()})
 
             res.send(token)
 

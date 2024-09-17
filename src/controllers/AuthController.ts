@@ -107,7 +107,7 @@ export class AuthController {
             }
 
             //Vid 563,ERRROR 
-            const token = generateJWT({id: user._id.toString()})
+            const token = generateJWT({id: user.id})
 
             res.send(token)
 
